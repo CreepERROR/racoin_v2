@@ -24,5 +24,9 @@ services:
             - .:/app
         working_dir: /app
         command: npm run watch
+    adminer:
+        image: adminer
+        ports:
+            - "8081:8080"
 volumes:
     db-data:
